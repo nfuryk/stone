@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PART145 Turnover</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://alcdn.msauth.net/browser/2.37.0/js/msal-browser.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <input type="file" id="excelUpload" accept=".xlsx" />
+    </div>
+    <h1>PART145 TURNOVER</h1>
+    <div class="nav-right">
+      <label>
+        <input type="checkbox" id="validateBeforeExport" checked />
+        Validate required fields before submit
+      </label>
+      <button id="submitDownloadButton">Submit & Download</button>
+    </div>
+  </div>
+
+  <div class="tab-bar">
+    <div id="tabs" class="tabs"></div>
+    <button class="add-tab" onclick="addTab()">+</button>
+  </div>
+
+  <div id="tab-content" class="tab-content"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
